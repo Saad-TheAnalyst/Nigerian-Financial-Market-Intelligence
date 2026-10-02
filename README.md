@@ -314,35 +314,4 @@ Nigerian-Financial-Market-Intelligence/
 
 ---
 
-## 🚀 How to Run the Project
 
-### Prerequisites
-1. **Python 3.10+** (or Anaconda)
-2. **MySQL Server 8.0+** running locally on port `3306`
-3. **Microsoft Power BI Desktop** (optional, to view `.pbix`)
-4. **Tableau Desktop / Tableau Public** (optional, to view `.twbx`)
-
-### Step 1: Install Python Dependencies
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost mysql-connector-python sqlalchemy nbformat nbconvert
-```
-
-### Step 2: Run the Jupyter Notebook
-Open JupyterLab:
-```bash
-jupyter lab nse_analysis.ipynb
-```
-Select **Kernel -> Restart Kernel and Run All Cells**. Every step from data loading to SQL ingestion and model training executes automatically with visible progress printouts.
-
-### Step 3: Run the SQL Queries
-Open your MySQL Workbench or command line:
-```bash
-mysql -u root -p < nse_queries.sql
-```
-*(Enter MySQL password when prompted: `Saad2025`)*
-
-### Step 4: Open the Power BI Dashboard
-Double-click [`NSE_Financial_Intelligence_Dashboard.pbix`](file:///c:/Users/HP/Stock/NSE_Financial_Intelligence_Dashboard.pbix) to launch the executive dashboard in Microsoft Power BI Desktop.
-
-### Step 5: Open the Tableau Dashboard
-Double-click [`NSE_Financial_Intelligence_Tableau.twbx`](file:///c:/Users/HP/Stock/NSE_Financial_Intelligence_Tableau.twbx) to launch the packaged workbook in Tableau Desktop or Tableau Public.
